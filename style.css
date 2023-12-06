@@ -50,7 +50,8 @@ body {
 .nav-action-figure .nav-link.active,
 #contato button,
 .mensagem-enviada,
-.container-footer {
+.container-footer,
+.adicionado {
     background-color: #18146a;
     color: #fff;
 }
@@ -68,7 +69,15 @@ body {
     display: inline;
 }
 
-.social-links a {
+.checked {
+    display: none;
+}
+
+.adicionado {
+    display: none;
+}
+
+a {
     text-decoration: none; 
 }
 
@@ -129,5 +138,9 @@ body {
 
     #action_figures h5 {
         font-size: medium;
+    }
+
+    #action_figures .price {
+        font-size: small;
     }
 }
