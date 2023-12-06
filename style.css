@@ -1,0 +1,129 @@
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+.navbar {
+    background-color: #18146a;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #18146a;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-action-figure .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: rgb(218, 228, 245);
+}
+
+#sobre #carousel img {
+    height: 650px;
+}
+
+#eventos img {
+    height: 280px;
+}
+
+#action_figures img {
+    height: 250px;
+}
+
+.section-title {
+    font-family: 'Nova Square', sans-serif;
+}
+
+#sobre,
+#action_figures {
+    background-color: rgb(218, 228, 245);
+}
+
+.text-colored {
+    color: #18146a;
+}
+
+.nav-action-figure .nav-link.active,
+#contato button,
+.mensagem-enviada,
+.container-footer {
+    background-color: #18146a;
+    color: #fff;
+}
+
+.nav-action-figure .nav-link:hover {
+    color: #18146a;
+}
+
+#contato textarea {
+    resize: none;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none; 
+}
+
+.mensagem-enviada {
+    display: none;
+}
+
+.mensagem-enviada p {
+    font-size: 18px;
+}
+
+.error {
+    color: darkred;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar button {
+        right: 0;
+    }
+
+    #sobre #carousel img {
+        height: 220px;
+    }
+
+    header nav {
+        margin-top: 12px;
+    }
+
+    #eventos img {
+        height: 250px;
+    }
+
+    #action_figures img {
+        height: 220px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #sobre #carousel img {
+        height: 400px;
+    }
+
+    header nav {
+        margin-top: 12px;
+    }
+
+    #eventos img {
+        height: 190px;
+    }
+
+    #action_figures img {
+        height: 120px;
+    }
+}

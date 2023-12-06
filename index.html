@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunka 文化 Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand section-title m-0 fs-4">Bunka 文化 Store</h1>
+            <button id="menu-hamburguer" name="menu-hamburguer" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-nav">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#sobre">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#eventos">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                        </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#action_figures">
+                            <i class="bi bi-person-arms-up me-1"></i>
+                            Action Figures
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#contato">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2500">
+                        <img class="w-100" src="./images/slides/slide1.jpg" alt="Personagens Dragon Ball Z">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img class="w-100" src="./images/slides/slide2.jpg" alt="Pain, personagem de Naruto">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img class="w-100" src="./images/slides/slide3.jpg" alt="Jiraya, personagem de Naruto">
+                    </div>
+                </div>
+                <button name="button-prev" type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button name="button-next" type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button name="prev-1" type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button name="prev-2" type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button name="prev-3" type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-5">
+                            <img src="./images/loja.jpg" class="d-block w-100 rounded" alt="Fachada da Bunka Store em Akihaba">
+                        </div>
+                        <div class="col-md-6 col-lg-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a loja</span></h2>
+                            <p>
+                                Nasce um novo lugar sagrado do anime! Grande inauguração de Bunka 文化  Action Figure Store em Akihabara” em 28 de abril!
+                                Como parte do plano de renovação foi inaugurado em 9 de dezembro de 2022.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                Além disso, será inaugurado um “espaço para eventos” no 7º andar, onde serão realizados eventos como sessões de autógrafos e talk shows.
+                                Será um local onde poderá desfrutar de diversão durante todo o dia!
+
+                                Por favor, venha para o renascido Bunka 文化 Action Figure Store em Akihabara!
+                            </p>
+                            <ul>
+                                <li>
+                                    Apresentação de criadores e escritores
+                                </li>
+                                <li>
+                                    Espaço cultural de integração
+                                </li>
+                                <li>
+                                    Shows de artistas das aberturas e encerramentos de animes.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Para <span class="text-colored">os fãs</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./images/eventos/talk_show.jpg" class="d-block w-100 rounded mb-2" alt="Artista japonês desenhando naruto e sasuke">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-camera"></i>
+                            Talk Shows
+                        </h3>
+                        <p>
+                           Muitas apresentações de criadores e escritores e seus novos lançamentos de mangás e animes, com entrevistas e sessão de fotos.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/eventos/autografos.jpg" class="d-block w-100 rounded mb-2" alt="Artista japonês dando autógrafos">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-pen"></i>
+                            Autógrafos
+                        </h3>
+                        <p>
+                            Se aproxime e conheça seus ídolos, sessão de autográfos com os artistas, dubladores e criadores dos seus mangás e animes favoritos.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/eventos/show.jpeg" class="d-block w-100 rounded mb-2" alt="Show de uma banda de rock">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-music-note-beamed"></i>
+                            Shows
+                        </h3>
+                        <p>
+                            Shows musicais das bandas presentes nas aberturas e encerramentos dos animes mais importantes do mundo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="action_figures" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Action <span class="text-colored">figures</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-3">
+                        <nav class="nav nav-pills flex-column nav-action-figure">
+                            <button name="button-action-figure-1" type="button" data-bs-toggle="tab" data-bs-target="#naruto" class="fw-bold text-start text-colored nav-link active">Naruto</button>
+                            <button name="button-action-figure-2" type="button" data-bs-toggle="tab" data-bs-target="#attack_on_titans" class="fw-bold text-start text-colored nav-link">Attack on Titans</button>
+                            <button name="button-action-figure-3" type="button" data-bs-toggle="tab" data-bs-target="#dragon_ball" class="fw-bold text-start text-colored nav-link">Dragon Ball Z</button>
+                            <button name="button-action-figure-4" type="button" data-bs-toggle="tab" data-bs-target="#demon_slayer" class="fw-bold text-start text-colored nav-link">Demon Slayer</button>
+                            <button name="button-action-figure-5" type="button" data-bs-toggle="tab" data-bs-target="#one_piece" class="fw-bold text-start text-colored nav-link">One Piece</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-9">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="naruto">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Uzumaki Naruto</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/naruto/naruto.jpeg" alt="Uzumaki Naruto">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Uchiha Sasuke</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/naruto/sasuke.jpeg" alt="Uchiha Sasuke">
+                                   </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Uchiha Itachi</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/naruto/itachi.jpeg" alt="Uchiha Itachi">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Tsunade</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/naruto/tsunade.jpeg" alt="Tsunade">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Pain</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/naruto/pain.jpeg" alt="Pain">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="attack_on_titans">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Eren Yeger</h5>
+                                        <img class="d-block w-100 rounded mt-3" src="./images/action_figures/attack_on_titans/eren.jpeg" alt="Eren Yeger">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Eren Yeger Titan</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/attack_on_titans/eren_titan.jpeg" alt="Eren Yeger Titan">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Titan encouraçado</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/attack_on_titans/encouracado.jpeg" alt="Titan encouraçado">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Mikasa</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/attack_on_titans/mikasa.jpeg" alt="Mikasa">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Levi</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/attack_on_titans/levi.jpeg" alt="Levi">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="dragon_ball">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Goku</h5>
+                                        <img class="d-block w-100 rounded mt-3" src="./images/action_figures/dragon_ball/goku.jpeg" alt="Goku">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Madimbu</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/dragon_ball/madimbu.jpeg" alt="Madimbu">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Android 18/h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/dragon_ball/android_18.jpeg" alt="Android 18">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Goku Super Saiyajin</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/dragon_ball/saiyajin.jpeg" alt="Goku Super Saiyajin">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="demon_slayer">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Tanjiru</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/demon_slayer/tanjiru.jpg" alt="Tanjiru">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Giyu</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/demon_slayer/giyu.jpg" alt="Giyu">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Inosuke</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/demon_slayer/inosuke.jpeg" alt="Inosuke">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Kyojuro</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/demon_slayer/kyojuro.jpeg" alt="Kyojuro">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Nezuko</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/demon_slayer/nezuko.jpeg" alt="Nezuko">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="one_piece">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Luffy</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/one_piece/luffy.jpg" alt="Luffy">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Mihawk</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/one_piece/mihawk.jpg" alt="Mihawk">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Lady Fight</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/one_piece/lady_fight.jpeg" alt="Lady Fight">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Nico Robin</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/one_piece/nice_robin.jpeg" alt="Nico Robin">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="text-colored fw-bold mt-2 mb-2">Zoro</h5>
+                                        <img class="d-block w-100 rounded" src="./images/action_figures/one_piece/zoro.jpeg" alt="Zoro">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">
+                        Fale <span class="text-colored">conosco</span>
+                    </h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label fw-bold text-colored">Nome</label>
+                                    <input type="text" name="nome" id="nome" class="form-control"/>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-bold text-colored">E-mail</label>
+                                    <input type="email" name="email" id="email" class="form-control"/>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label fw-bold text-colored">Telefone (opcional)</label>
+                                    <input type="tel" name="telefone" id="telefone" class="form-control"/>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label fw-bold text-colored">Mensagem</label>
+                                    <textarea class="form-control" name="mensagem" id="mensagem"></textarea>
+                                </div>
+                                <button type="submit" class="btn fw-bold">Enviar</button>
+                                <div class="mensagem-enviada p-2 mt-3 rounded text-center">
+                                    <p class="pt-3">Mensagem enviada! Rapidamente retornaremos o contato. Obrigado.</p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6 p-5">
+                            <div class="row">
+                                <h3 class="section-title fs-4 text-colored">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    Redes sociais
+                                </h3>
+                                <ul class="social-links">
+                                    <li class="fs-4">
+                                        <a href="https://www.facebook.com/guifcamargo/">
+                                            <i class="bi bi-facebook text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-4 ms-1 me-1">
+                                        <a href="https://www.instagram.com/gui.fcamargo/">
+                                            <i class="bi bi-instagram text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-4">
+                                        <a href="https://github.com/guicamargo19">
+                                            <i class="bi bi-github text-colored"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                                <h3 class="section-title fs-4 text-colored">
+                                    <i class="bi bi-geo-alt"></i>
+                                    Endereço
+                                </h3>
+                                <p>
+                                    4 Chome-3-1 Sotokanda, Chiyoda City, Tokyo 101-0021, Japão
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-footer w-100 p-3 text-center">
+        2023 &copy; Bunka 文化 Action Figure Store - Todos os direitos reservados
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#telefone').mask('(00)0000-0000')
+
+            $('form').validate({
+                rules: {
+                    nome: {
+                        required: true,
+                    },
+                    email: {
+                        required: true,
+                    },
+                    telefone: {
+                        required: false,
+                    },
+                    mensagem: {
+                        required: true,
+                    }
+                    
+                },
+                messages: {
+                    nome: 'Por favor, digite seu nome',
+                    email: 'Por favor, digite um telefone',
+                    mensagem: 'Por favor, digite a mensagem',
+                },
+                
+                submitHandler: function(){
+                    $('.mensagem-enviada').slideToggle()
+                    $('#nome').val('')
+                    $('#telefone').val('')
+                    $('#email').val('')
+                    $('#mensagem').val('')
+                }
+            })
+        })
+    </script>
+</body>
+</html>
