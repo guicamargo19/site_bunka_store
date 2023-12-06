@@ -126,4 +126,8 @@ body {
     #action_figures img {
         height: 120px;
     }
+
+    #action_figures h5 {
+        font-size: medium;
+    }
 }
