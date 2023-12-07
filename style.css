@@ -38,6 +38,11 @@ body {
     font-family: 'Nova Square', sans-serif;
 }
 
+#sobre p,
+#eventos p {
+    text-align: justify;
+}
+
 #sobre,
 #action_figures {
     background-color: rgb(218, 228, 245);
@@ -48,7 +53,7 @@ body {
 }
 
 .nav-action-figure .nav-link.active,
-#contato button,
+#modal button.btn,
 .mensagem-enviada,
 .container-footer,
 .adicionado {
@@ -56,11 +61,15 @@ body {
     color: #fff;
 }
 
+#modal button.btn:hover {
+    background-color: #2f2794;
+}
+
 .nav-action-figure .nav-link:hover {
     color: #18146a;
 }
 
-#contato textarea {
+#modal textarea {
     resize: none;
 }
 
@@ -115,17 +124,24 @@ a {
     }
 
     #action_figures img {
-        height: 220px;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    #action_figures .info {
+        justify-content: space-around;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
     #sobre #carousel img {
         height: 400px;
     }
 
     header nav {
         margin-top: 12px;
+        padding-left: 12.5%;
     }
 
     #eventos img {
