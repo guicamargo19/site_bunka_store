@@ -2,7 +2,7 @@
 
 ## Apresentação do projeto
 
-
+https://github.com/guicamargo19/site_bunka_store/assets/133445061/8980a208-a6db-4486-857e-1d233d042a6e
 
 Site Bunka Store de Anime e Action Figures da cultura japonesa. Projeto desenvolvido com HTML e estilização com classes
 Bootstrap e Bootstrap Icons, utilizando ferramentas como NavBar, Modal usado para formulário e Carousel de imagens, com
