@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
     <meta name="description" content="Site Bunka Action Figure Store">
-    <title>Bunka 文化 Store</title>
+    <title>Bunka Store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Nova+Square&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+
+    <!-- CABEÇALHO -->
+    <header class="navbar navbar-expand-lg sticky-top p-2" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand section-title m-0 fs-4">Bunka 文化 Store</h1>
+            <h1 class="navbar-brand section-title m-0 fs-1">Bunka Store</h1>
             <button id="menu-hamburguer" name="menu-hamburguer" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,77 +53,91 @@
         </div>
     </header>
 
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
-        
-        <section id="modal" class="modal" data-bs-backdrop="static">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5>Contato</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="nome" class="form-label fw-bold text-colored">Nome</label>
-                                <input type="text" name="nome" id="nome" class="form-control"/>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label fw-bold text-colored">E-mail</label>
-                                <input type="email" name="email" id="email" class="form-control"/>
-                            </div>
-                            <div class="mb-3">
-                                <label for="telefone" class="form-label fw-bold text-colored">Telefone (opcional)</label>
-                                <input type="tel" name="telefone" id="telefone" class="form-control"/>
-                            </div>
-                            <div class="mb-3">
-                                <label for="mensagem" class="form-label fw-bold text-colored">Mensagem</label>
-                                <textarea class="form-control" name="mensagem" id="mensagem"></textarea>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <button type="submit" class="btn">Enviar</button>
-                            </div>
-                            <div class="mensagem-enviada p-2 mt-3 rounded text-center">
-                                <p class="pt-3">Mensagem enviada! Logo retornaremos o seu contato. Obrigado.</p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+    <!-- CARROSSEL DE IMAGENS -->
+    <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img class="w-100" src="./assets/slides/attack-on-titan.jpg" alt="Levi, personagem Attack on Titan">
             </div>
-        </section>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="w-100" src="./assets/slides/demon-slayer.png" alt="Tanjiru, personagem de Demon Slayer">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="w-100" src="./assets/slides/dragon-ball-z.jpg" alt="Goku, personagem de Dragon Ball Z">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="w-100" src="./assets/slides/naruto.jpg" alt="Naruto, personagem de Naruto">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="w-100" src="./assets/slides/one-piece.jpg" alt="Luffy, personagem de One Piece">
+            </div>
+        </div>
+        <button name="button-prev" type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button name="button-next" type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button name="prev-1" type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+            <button name="prev-2" type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            <button name="prev-3" type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            <button name="prev-4" type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+            <button name="prev-5" type="button" data-bs-target="#carousel" data-bs-slide-to="4"></button>
+        </div>
+    </div>    
 
-        <section id="sobre">
-            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="2500">
-                        <img class="w-100" src="./assets/slides/slide1.jpg" alt="Personagens Dragon Ball Z">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2500">
-                        <img class="w-100" src="./assets/slides/slide2.jpg" alt="Pain, personagem de Naruto">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2500">
-                        <img class="w-100" src="./assets/slides/slide3.jpg" alt="Jiraya, personagem de Naruto">
-                    </div>
+    <!-- MODAL -->
+    <section id="modal" class="modal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <button name="button-prev" type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button name="button-next" type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-                <div class="carousel-indicators">
-                    <button name="prev-1" type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
-                    <button name="prev-2" type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                    <button name="prev-3" type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label fw-bold text-colored">Nome</label>
+                            <input type="text" name="nome" id="nome" class="form-control"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold text-colored">E-mail</label>
+                            <input type="email" name="email" id="email" class="form-control"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label fw-bold text-colored">Telefone (opcional)</label>
+                            <input type="tel" name="telefone" id="telefone" class="form-control"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label fw-bold text-colored">Mensagem</label>
+                            <textarea class="form-control" name="mensagem" id="mensagem"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn">Enviar</button>
+                        </div>
+                        <div class="mensagem-enviada p-2 mt-3 rounded text-center">
+                            <p class="pt-3">Mensagem enviada! Logo retornaremos o seu contato. Obrigado.</p>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="pt-5 pb-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-0 col-lg-5 mb-md-4">
-                            <img src="./assets/loja.jpg" class="d-block w-100 rounded" alt="Fachada da Bunka Store em Akihaba">
-                        </div>
-                        <div class="col-md-0 col-lg-7 mt-3 mt-md-0">
+        </div>
+    </section>
+    
+    <!-- ESPIÃO DE ABAS -->
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" >
+        
+        <!-- SECTION SOBRE -->
+        
+        <section id="sobre" class="active mt-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-lg-4 mb-md-2 pt-5">
+                        <img src="./assets/loja.jpg" class="d-block w-100 rounded" alt="Fachada da Bunka Store em Akihaba">
+                    </div>
+                    <div class="col pt-5">
+                        <div class="col-md-0 col-lg-11 mt-3 mt-md-0">
                             <h2 class="section-title">Sobre <span class="text-colored">a loja</span></h2>
                             <p>
                                 Um lugar repleto de cultura, a Bunka 文化 Action Figure Store foi inaugurada em 28 de abril em Akihabara,
@@ -151,9 +167,14 @@
                     </div>
                 </div>
             </div>
+
+            
+
         </section>
 
-        <section id="eventos" class="pt-5 pb-5">
+        
+        <section id="eventos"  class="mt-5 pt-5 pb-5">
+            <div class="space"></div>
             <div class="container">
                 <div class="row">
                     <h2 class="section-title text-center">Para <span class="text-colored">os fãs</span></h2>
@@ -193,7 +214,9 @@
             </div>
         </section>
 
-        <section id="action_figures" class="pt-5 pb-5">
+        
+        <section id="action_figures" class="mt-5 pt-5 pb-5">
+            <div class="space"></div>
             <div class="container">
                 <div class="row">
                     <h2 class="section-title text-center mb-5">Action <span class="text-colored">figures</span></h2>
@@ -202,7 +225,7 @@
                     <aside class="col-md-3">
                         <nav class="nav nav-pills flex-column nav-action-figure">
                             <button name="button-action-figure-1" type="button" data-bs-toggle="tab" data-bs-target="#naruto_uzumaki" class="fw-bold text-start text-colored nav-link active">Naruto</button>
-                            <button name="button-action-figure-2" type="button" data-bs-toggle="tab" data-bs-target="#attack_on_titans" class="fw-bold text-start text-colored nav-link">Attack on Titans</button>
+                            <button name="button-action-figure-2" type="button" data-bs-toggle="tab" data-bs-target="#attack_on_titans" class="fw-bold text-start text-colored nav-link">Attack on Titan</button>
                             <button name="button-action-figure-3" type="button" data-bs-toggle="tab" data-bs-target="#dragon_ball" class="fw-bold text-start text-colored nav-link">Dragon Ball Z</button>
                             <button name="button-action-figure-4" type="button" data-bs-toggle="tab" data-bs-target="#demon_slayer" class="fw-bold text-start text-colored nav-link">Demon Slayer</button>
                             <button name="button-action-figure-5" type="button" data-bs-toggle="tab" data-bs-target="#one_piece" class="fw-bold text-start text-colored nav-link">One Piece</button>
@@ -214,7 +237,10 @@
                                 <div class="row">
                                     <div class="col-md-3" id="naruto">
                                         <h5 class="text-colored fw-bold mt-2 mb-2 nomeProduto">Naruto</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/naruto/naruto.jpeg" alt="Uzumaki Naruto">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/naruto/naruto.jpeg" alt="Uzumaki Naruto">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart1" href="#naruto"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -226,7 +252,10 @@
                                     </div>
                                     <div class="col-md-3" id="sasuke">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Uchiha Sasuke</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/naruto/sasuke.jpeg" alt="Uchiha Sasuke">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/naruto/sasuke.jpeg" alt="Uchiha Sasuke">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart2" href="#sasuke"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -238,7 +267,10 @@
                                    </div>
                                     <div class="col-md-3" id="itachi">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Uchiha Itachi</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/naruto/itachi.jpeg" alt="Uchiha Itachi">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/naruto/itachi.jpeg" alt="Uchiha Itachi">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart3" href="#itachi"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -250,7 +282,10 @@
                                     </div>
                                     <div class="col-md-3" id="tsunade">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Tsunade</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/naruto/tsunade.jpeg" alt="Tsunade">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/naruto/tsunade.jpeg" alt="Tsunade">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart4" href="#tsunade"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -262,7 +297,10 @@
                                     </div>
                                     <div class="col-md-3" id="pain">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Pain</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/naruto/pain.jpeg" alt="Pain">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/naruto/pain.jpeg" alt="Pain">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart5" href="#pain"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -278,7 +316,10 @@
                                 <div class="row">
                                     <div class="col-md-3" id="eren">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Eren Yeger</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/attack_on_titans/eren.jpeg" alt="Eren Yeger">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/attack_on_titans/eren.jpeg" alt="Eren Yeger">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_titans1" href="#eren"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -290,7 +331,10 @@
                                     </div>
                                     <div class="col-md-3" id="eren_titan">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Eren Titan</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/attack_on_titans/eren_titan.jpeg" alt="Eren Yeger Titan">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/attack_on_titans/eren_titan.jpeg" alt="Eren Yeger Titan">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_titans2" href="#eren_titan"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -302,7 +346,10 @@
                                     </div>
                                     <div class="col-md-3" id="encouracado">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Encouraçado</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/attack_on_titans/encouracado.jpeg" alt="Titan encouraçado">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/attack_on_titans/encouracado.jpeg" alt="Titan encouraçado">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_titans3" href="#encouracado"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -314,7 +361,10 @@
                                     </div>
                                     <div class="col-md-3" id="mikasa">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Mikasa</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/attack_on_titans/mikasa.jpeg" alt="Mikasa">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/attack_on_titans/mikasa.jpeg" alt="Mikasa">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_titans4" href="#mikasa"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -326,7 +376,10 @@
                                     </div>
                                     <div class="col-md-3" id="levi">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Levi</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/attack_on_titans/levi.jpeg" alt="Levi">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/attack_on_titans/levi.jpeg" alt="Levi">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_titans5" href="#levi"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -342,7 +395,10 @@
                                 <div class="row">
                                     <div class="col-md-3" id="goku">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Goku</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/dragon_ball/goku.jpeg" alt="Goku">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/dragon_ball/goku.jpeg" alt="Goku">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_dragon1" href="#goku"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -354,7 +410,10 @@
                                     </div>
                                     <div class="col-md-3" id="majinboo">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Majin Boo</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/dragon_ball/madimbu.jpeg" alt="Majin Boo">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/dragon_ball/majin-boo.png" alt="Majin Boo">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_dragon2" href="#majinboo"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -366,7 +425,10 @@
                                     </div>
                                     <div class="col-md-3" id="android">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Android 18</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/dragon_ball/android_18.jpeg" alt="Android 18">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/dragon_ball/android_18.jpeg" alt="Android 18">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_dragon3" href="#android"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -378,7 +440,10 @@
                                     </div>
                                     <div class="col-md-3" id="super">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Goku Saiyajin</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/dragon_ball/saiyajin.jpeg" alt="Goku Super Saiyajin">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/dragon_ball/saiyajin.jpeg" alt="Goku Super Saiyajin">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_dragon4" href="#super"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -395,7 +460,10 @@
                                 <div class="row">
                                     <div class="col-md-3" id="tanjiru">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Tanjiru</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/demon_slayer/tanjiru.jpg" alt="Tanjiru">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/demon_slayer/tanjiru.jpg" alt="Tanjiru">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_demon1" href="#tanjiru"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -407,7 +475,10 @@
                                     </div>
                                     <div class="col-md-3" id="giyu">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Giyu</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/demon_slayer/giyu.jpg" alt="Giyu">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/demon_slayer/giyu.jpg" alt="Giyu">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_demon2" href="#giyu"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -419,7 +490,10 @@
                                     </div>
                                     <div class="col-md-3" id="inosuke">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Inosuke</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/demon_slayer/inosuke.jpeg" alt="Inosuke">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/demon_slayer/inosuke.jpeg" alt="Inosuke">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_demon3" href="#inosuke"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -431,7 +505,10 @@
                                     </div>
                                     <div class="col-md-3" id="kyojuro">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Kyojuro</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/demon_slayer/kyojuro.jpeg" alt="Kyojuro">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/demon_slayer/kyojuro.jpeg" alt="Kyojuro">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_demon4" href="#kyojuro"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -443,7 +520,10 @@
                                     </div>
                                     <div class="col-md-3" id="nezuko">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Nezuko</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/demon_slayer/nezuko.jpeg" alt="Nezuko">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/demon_slayer/nezuko.jpeg" alt="Nezuko">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_demon5" href="#nezuko"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -459,7 +539,10 @@
                                 <div class="row">
                                     <div class="col-md-3" id="luffy">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Luffy</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/one_piece/luffy.jpg" alt="Luffy">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/one_piece/luffy.jpg" alt="Luffy">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_piece1" href="#luffy"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -471,7 +554,10 @@
                                     </div>
                                     <div class="col-md-3" id="mihawk">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Mihawk</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/one_piece/mihawk.jpg" alt="Mihawk">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/one_piece/mihawk.png" alt="Mihawk">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_piece2" href="#mihawk"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -483,7 +569,10 @@
                                     </div>
                                     <div class="col-md-3" id="fight">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Lady Fight</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/one_piece/lady_fight.jpeg" alt="Lady Fight">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/one_piece/lady_fight.jpeg" alt="Lady Fight">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_piece3" href="#fight"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -495,7 +584,10 @@
                                     </div>
                                     <div class="col-md-3" id="robin">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Nico Robin</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/one_piece/nice_robin.jpeg" alt="Nico Robin">
+                                        <div class="image">
+                                            <div class="overlay"></div>
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/one_piece/nice_robin.jpeg" alt="Nico Robin">
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_piece4" href="#robin"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -507,7 +599,10 @@
                                     </div>
                                     <div class="col-md-3" id="zoro">
                                         <h5 class="text-colored fw-bold mt-2 mb-2">Zoro</h5>
-                                        <img class="d-block w-100 rounded" src="./assets/action_figures/one_piece/zoro.jpeg" alt="Zoro">
+                                        <div class="image">
+                                            <img class="d-block w-100 rounded" src="./assets/action_figures/one_piece/zoro.jpeg" alt="Zoro">
+                                            <div class="overlay"></div>
+                                        </div>
                                         <div class="d-flex justify-content-md-between info">
                                             <p class="pt-2 ps-2 text-colored fw-bold price">R$ 350,00</p>
                                             <a id="cart_piece5" href="#zoro"><i class="pt-2 pe-2 fs-4 d-flex justify-content-end bi bi-cart text-colored"></i></a>
@@ -525,7 +620,7 @@
             </div>
         </section>
 
-        <section id="contato" class="pt-5 pb-5">
+        <section id="contato" class="mt-5 pt-5 pb-5">
             <div class="container">
                 <div class="row">
                     <h2 class="section-title text-center">
@@ -570,10 +665,14 @@
                 </div>
             </div>
         </section>
+
     </div>
 
     <footer class="container-footer w-100 p-3 text-center">
-        2024 - &copy; Bunka 文化 Action Figure Store - Todos os direitos reservados
+        <script>document.write(new Date().getFullYear());</script> - &copy; 
+        <a class="text-white" href="https://portfolio-pink-omega-63.vercel.app/">
+            <strong>Portfólio Guilherme Camargo</strong>
+        </a> - Todos os direitos reservados
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

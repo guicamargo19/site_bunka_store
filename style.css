@@ -5,16 +5,22 @@
 }
 
 body {
-    font-family: 'Kanit', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    overflow-x: hidden;
+}
+
+.space {
+    height: 70px;
 }
 
 .navbar {
-    background-color: #18146a;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: -75px;
 }
 
 #cabecalho .nav .nav-link.active {
-    background-color: #fff;
-    color: #18146a;
+    background-color: #155956;
+    color: #fff;
 }
 
 #cabecalho .nav .nav-link,
@@ -25,11 +31,11 @@ body {
 }
 
 .navbar-toggler {
-    background-color: rgb(218, 228, 245);
+    background-color: #e7e7e7;
 }
 
-#sobre #carousel img {
-    height: 600px;
+#carousel img{
+    height: 100vh;
 }
 
 #eventos img {
@@ -37,11 +43,11 @@ body {
 }
 
 #action_figures img {
-    height: 250px;
+    height: 220px;
 }
 
 .section-title {
-    font-family: 'Nova Square', sans-serif;
+    font-family: 'League Spartan', sans-serif;
 }
 
 #sobre p,
@@ -49,13 +55,14 @@ body {
     text-align: justify;
 }
 
-#sobre,
-#action_figures {
-    background-color: rgb(218, 228, 245);
+#eventos,
+#contato {
+    background: linear-gradient(to right,#f5f5f5cc,#f5f5f5cc),url(https://servidor-estatico-tan.vercel.app/common-bg.svg);
+    background-position: center;
 }
 
 .text-colored {
-    color: #18146a;
+    color: #155956;
 }
 
 .nav-action-figure .nav-link.active,
@@ -63,16 +70,16 @@ body {
 .mensagem-enviada,
 .container-footer,
 .adicionado {
-    background-color: #18146a;
+    background-color: #155956;
     color: #fff;
 }
 
 #modal button.btn:hover {
-    background-color: #2f2794;
+    background-color: #87baab;
 }
 
 .nav-action-figure .nav-link:hover {
-    color: #18146a;
+    color: #87baab;
 }
 
 #modal textarea {
@@ -81,8 +88,12 @@ body {
 
 .social-links li {
     list-style: none;
-    display: inline;
+    display: inline-block;
 }
+
+.social-links li a:hover {
+    color: #87baab !important;
+}   
 
 .checked {
     display: none;
@@ -106,6 +117,32 @@ a {
 
 .error {
     color: darkred;
+}
+
+.container-footer a strong:hover {
+    color: gray;
+}
+
+.image {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.image:hover .overlay {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
 @media screen and (max-width: 767px) {
