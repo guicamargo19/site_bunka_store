@@ -19,19 +19,34 @@ body {
 }
 
 #cabecalho .nav .nav-link.active {
-    background-color: #155956;
-    color: #fff;
+    color: gray;
+    font-size: 18px;
+    background-color: transparent;
 }
 
 #cabecalho .nav .nav-link,
 .navbar-brand,
-.navbar-brand:hover,
 .nav-action-figure .nav-link.active:hover {
     color: #fff;
+    transition: all .3s ease;
+}
+
+.navbar-brand:hover,
+#cabecalho .nav .nav-link:hover {
+    color: gray;
+    transition: all .3s ease;
+    cursor: pointer;
 }
 
 .navbar-toggler {
-    background-color: #e7e7e7;
+    color: #fff;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    height: 3px;
+    color: #fff;
+    padding: 14px;
 }
 
 #carousel img{
@@ -135,6 +150,7 @@ a {
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
     position: absolute;
     z-index: 100;
     top: 0;
@@ -145,17 +161,31 @@ a {
     transition: all 0.5s ease;
 }
 
+.navbar-toggler-icon {
+    color: white !important;
+}
+
 @media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%
+    }
+    
     .navbar {
         text-align: center;
+        background-color: #155956;
     }
 
     .navbar button {
         right: 0;
     }
 
-    #sobre #carousel img {
-        height: 220px;
+    #carousel img {
+        height: 280px;
+        margin-top: 75px;
+    }
+
+    .space {
+        height: 30px;
     }
 
     header nav {
@@ -167,12 +197,17 @@ a {
     }
 
     #action_figures img {
-        max-width: 250px;
+        max-width: 210px;
         margin: 0 auto;
     }
     
     #action_figures .info {
         justify-content: space-around;
+    }
+
+    #modal {
+        max-width: 90%;
+        margin: 5%;
     }
 }
 

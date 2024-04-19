@@ -1,4 +1,14 @@
 $(document).ready(function() {
+    $(document).ready(function(){
+        // Ao clicar em um item do menu
+        $('.nav-link').click(function(){
+            // Fechar o menu hamburguer
+            $('#menu-hamburguer').addClass('collapsed');
+            $('#menu-nav').removeClass('show');
+        });
+    });
+    
+    
     $('#telefone').mask('(00) 00000-0000')
 
     $('form').validate({
